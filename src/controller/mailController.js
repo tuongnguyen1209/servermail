@@ -17,6 +17,7 @@ exports.sendmail = async (req, res) => {
     res.status(400).json({
       status: "False",
       message: "Gửi mail thất bại, vui lòng kiểm tra lại",
+      error: error.message,
     });
   }
 };
